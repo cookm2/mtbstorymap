@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mountain Biking Trail Systems in Oregon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--meta data for sharing links on Facebook-->
+    //<meta property="og:title" content="Mountain Biking Trail Systems in Oregon"/>
+    //<meta property="og:url" content="http://geoviz.ceoas.oregonstate.edu/storymap/examples/2.4/video.html"/>
+    //<meta property="og:description" content="This is an example of a storymap."/>
+    //<meta property="og:image" content="img/social.png"/>
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="img/mybike.ico" type="image/x-icon">
+
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/storymap.2.4.css">
+    <!--add required libraries-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!--boostrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!--leaflet.ajax for asynchronously adding geojson data-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--story map plugin-->
+    <script src="js/storymap.2.4.js"></script>
+</head>
+<body>
+
+<div id="storymap" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 storymap-story">
+            <section data-scene="overview" data-background="assets/biker.mp4">
+                <div class="fullscreen text-center">
+
+                    <h1 class="display-4 d-flex justify-content-center">Mountain Biking Trails in McDonald Forest Area</h1>
+
+
+                    <medium class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">This story map
+                        shows some of my favorite trails within the Mcdonald Forest trail system.
+                    </medium>
+                </div>
+            </section>
+            <section data-scene="extendo">
+                <h2>Extendo</h2>
+                <p>The trail starts with a series of punchy climbs and quick descents over roots and often quite loose
+                    gravel through the first half. The second half is all downhill, also with roots and gravel, and a few
+                    switchback-style turns. Mind your bars on the one tree gap... it's not exactly set up for modern wide
+                    bars.</p>
+                <p>Official multi-use bidirectional gravel trail. The trail is open from April 15th to October 31st to
+                    bikes and horses, and is open year-round to pedestrian traffic. Bikes are required by OSU to yeild to
+                    all other users.</p>
+                <p>1 mile, 70 ft climb, -692 feet of descent, 8:55 average time</p>
+            </section>
+
+            <section data-scene="uproute">
+                <h2>Uproute</h2>
+                <p>A series of short-legged switchbacks between the end of Road 6020 and Road 680 that also serves as
+                    an access point to the top of Extendo.</p>
+                <p>Short official multi-use bidirectional gravel trail. The trail is open year-round to bikes as well
+                    as equestrian and pedestrian traffic. Bikes are required by OSU to yield to all other users.</p>
+                <p>1,351 feet, 163 ft climb, -17 ft descent, 3:44 average time</p>
+            </section>
+
+            <section data-scene="narnia">
+                <h2>Narnia</h2>
+                <p>Not quite a flow trail but probably as close as you'll find around here. Lots of little turns and
+                    berms, some optional jumps. A few braided/old lines or options, including ways to cut in from
+                    Skillings Rd a bit lower down.</p>
+                <p>Access requires a free permit that must be renewed yearly in person at the Starker Forests main
+                    office, open M-F between 7am and 4:30pm.</p>
+                <p>3,573 feet, 47 ft climb, -354 ft descent, 4:51 average time</p>
+            </section>
+
+            <section data-scene="upperhorse">
+                <h2>Upper-Horse</h2>
+                <p>The upper half of the trail is a series of switchbacks through relatively open managed forestland
+                    and the bottom half is somewhat and variable-tread with a short double track section. Trail is
+                    often covered with wet, decomposing, crushed organic slurry that make it sloppy to ride in winter,
+                    but the gravel tread will hold up to the abuse and your tires will do no harm to anything other
+                    than making you and your bike a mess. Be aware of other forest users at all times; as this and
+                    Dan's Trail can be crowded.</p>
+                <p>Official multi-use bidirectional gravel trail. The trail is open year-round to bikes as well as
+                    equestrian and pedestrian traffic. Bikes are required by OSU to yield to all other users.</p>
+                <p>4,136 feet, 26 ft climb, -422 ft descent, 4:39 average time</p>
+            </section>
+            <section data-scene="upperdans">
+                <h2>Upper-Dan's</h2>
+                <p>One of the longest continuous trails in the McDonald Forest system when combined with its middle
+                    and lower counterparts. Long straight sections interrupted by open off-camber switchback corners.
+                    Mostly open sight lines that encourage high speeds, but be aware of other trail users potentially
+                    behind every blind corner. Both this and Horse Trail can be crowded. Trail is often covered with
+                    wet, decomposing, crushed organic slurry that make it sloppy to ride in winter, but the gravel
+                    tread will hold up to the abuse and your tires will do no harm to anything other than making you
+                    and your bike a mess.</p>
+                <p>Official multi-use bidirectional gravel trail. The trail is open year-round to bikes as well as
+                    equestrian and pedestrian traffic. Bikes are required by OSU to yield to all other users.</p>
+                <p>2 miles, 117 ft climb, -887 ft descent, 8:34 average time</p>
+            </section>
+
+            <section data-scene="mcdun">
+                <h2>McDonald Dunn Forest</h2>
+                <p>The McDonald Forest area has a long history in its relationship to mountain biking. Largely due
+                    to being conveniently located adjacent to the City of Corvallis. In reality, there are five
+                    separate land areas: McDonald Forest (South), Peavy Arboretum (North-East), Dunn Forest (North),
+                    Chip Ross (East), and an island of land operated by Starker Forests in the center of the McDonald
+                    Forest. The McDonald Forest, Dunn Forest, and Peavy Arboretum are managed by OSU, while Chip Ross
+                    is managed by the City of Corvallis. Due to the number of land managers and number of visitors to
+                    the area, relationship with the mountain biking community has been an evolving process.</p>
+                <img src="img/osu.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="the flag of oregon">
+                <p></p>
+                <p>There are five main parking areas, depending upon your desired starting location. The Oak Creek
+                    Gate, is the main access point for the McDonald Forest and is often where build days are scheduled
+                    to meet. The Chip Ross Access Gate, is attached to the City of Corvallis. The Lewisburg Saddle,
+                    offers a convenient access to both McDonald Forest and Peavy Arboretum. The Soap Creek Gate,
+                    offers access to the northern part of the McDonald Forest. Finally, the Peavy Arboretum parking
+                    lot gives access to the seasonal arboretum.</p>
+            </section>
+
+            <section data-scene="end" data-background="assets/end.jpg">
+                <div class="fullscreen text-center">
+                    <h1 class="display-4 d-flex justify-content-center">And there are many... many more.</h1>
+                    <medium class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">Sources are as follows;
+                        <a href="http://teamdirt.org/trailareas/macdunn.html">Team Dirt</a>,
+                        and  <a href="http://cf.forestry.oregonstate.edu/mcdonald-forest-trails">OSU Research Forests</a>.
+
+                    </medium>
+                </div>
+            </section>
+
+        </div>
+        <!--map div-->
+        <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+
+    <dl>
+        <dt>
+            <!--facebook icon-->
+            <a class="fab fa-facebook-square btn"
+               href="https://facebook.com/sharer.php?u=http://geoviz.ceoas.oregonstate.edu/storymap/examples/2.3/video.html"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--facebook icon-->
+            <a class="fab fa-github-square btn" href="https://github.com/cookm2" style="top:40px"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--info icon-->
+            <i class="fas fa-info-circle btn" style="top:60px" data-toggle="modal" data-target="#info-modal"></i>
+        </dt>
+    </dl>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>I created this story map based on the template provided by Bo Zhao. The purpose of this story map
+                        was to show some of the trails located within the McDonald Dunn Forest trail network. The story
+                        map library is derived from the storymap plugin for leaflet at
+                        <a>http://atlefren.github.io/storymap/</a>, and its functionality
+                        relies on both leaflet and Boostrap.</p>
+                    <p><b>storymap.js</b> | Released Date: 02/20/2017 | Version: 2.1 | MIT License </p>
+                    <p><b>Author: Michael K. Cook</b> | Natural Resource Management Major | Oregon State University
+                    </p>
+                    <p>All information was collected from Trail Forks, Team Dirt, and OSU Research Forests.</p>
+                    <p>The <a href="https://www.shutterstock.com/video/clip-3201277-mountain-bike-rushes-down-off-road-trail">
+                        background video</a> on the front page was acquired from shutterstock. </p>
+                    <p>The favicon image was acquired from <a>http://www.iconfinder.com</a></p>
+                    <p>This story map uses geospatial data from mapbox, Google Earth Engine, ESRI Map, Open Street Maps
+                        and Oregon Explorer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+
+
+    // Create Legend Contents in html format
+    var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
+    var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
+
+    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+    // var layers = {
+    //      layer1: {layer: layer1, legend: legend1},
+    //      layer2: {layer: layer2, legend: legend2}
+    //      ...
+    // }
+
+    var layers = {
+        ESRI: {layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
+        counties: {
+            layer: L.geoJson.ajax('assets/counties.geojson', {
+                color: 'orange',
+                weight: 2,
+                opacity: 0.3
+            }), legend: county_legend
+        },
+        GEE: {
+            layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
+            legend: forest_legend
+        },
+        satellite: {
+            layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+                id: 'mapbox.satellite'
+            })
+        },
+        cartodb_light: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'),
+        },
+        extendo: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'),
+            layer: L.geoJson.ajax('assets/extendo.geojson')
+        },
+        uproute: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'),
+            layer: L.geoJson.ajax('assets/uproute.geojson')
+        },
+        narnia: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'),
+            layer: L.geoJson.ajax('assets/narnia.geojson')
+        },
+        upperhorse: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'),
+            layer: L.geoJson.ajax('assets/upperhorse.geojson')
+        },
+        upperdans: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'),
+            layer: L.geoJson.ajax('assets/upperdans.geojson')
+        },
+        mcdun: {layer: L.geoJson.ajax('assets/mcdun.geojson')}
+
+    };
+
+
+    var scenes = {
+        overview: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Cover Page', layers: []},
+        extendo: {lat: 44.627970, lng: -123.329816, zoom: 15, name: 'Extendo', layers: [layers.extendo]},
+        uproute: {lat: 44.627271, lng: -123.333169, zoom: 15, name: 'Uproute', layers: [layers.uproute]},
+        narnia: {lat: 44.607514, lng: -123.347701, zoom: 15, name: 'Narnia', layers: [layers.narnia]},
+        upperhorse: {lat: 44.623610, lng: -123.304984, zoom: 15, name: 'Upper-Horse', layers: [layers.upperhorse]},
+        upperdans: {lat: 44.614350, lng: -123.318411, zoom: 15, name: 'Upper-Dans', layers: [ layers.upperdans]},
+        mcdun: {lat: 44.627970, lng: -123.329816, zoom: 13, name: 'McDonald Dunn Forest', layers: [layers.satellite,
+                layers.mcdun]},
+        end: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'The End',}
+    };
+
+    $('#storymap').storymap({
+        scenes: scenes,
+        baselayer: layers.cartodb_light,
+        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        credits: "",
+        loader: true,
+        scalebar: false,
+        flyo: true,
+        navwidget: true,
+
+        createMap: function () {
+            // create a map in the "map" div, set the view to a given place and zoom
+            var map = L.map($(".storymap-map")[0], {
+                zoomControl: false, scrollWheelZoom: false, fadeAnimation: true,
+                zoomAnimation: true
+            }).setView([44, -120], 7);
+
+            return map;
+        }
+    });
+</script>
+</body>
+</html>
